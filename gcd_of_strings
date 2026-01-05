@@ -1,0 +1,37 @@
+# class Solution:
+#     def gcdOfStrings(self, str1: str, str2: str) -> str:
+#         answer = "" 
+#         index = 0
+#         shortest_len = min(len(str1), len(str2))
+#         longest_len = max(len(str1), len(str2))
+#         shortest_word = str1 if len(str1) < len(str2) else str2
+#         longest_word = str1 if len(str1) > len(str2) else str2
+#         if str1[index] != str2[index]:
+#             return ""
+
+#         while index < shortest_len:
+#             answer += str1[index]
+#             if (all(not s.strip() for s in str1.split(answer)) and all(not s.strip() for s in str2.split(answer))):
+#                 return answer
+#             index += 1
+
+#         return answer
+
+
+# my solution is to try all prefixes and then multiply the prefix 
+# against itself to see if it equals both strings. 
+# The problem is that I don't know how to programtically multiple the prefix against itself x times.
+
+
+# The solution is simple and elegant.
+
+
+class Solution:
+    def gcdOfStrings(self, str1: str, str2: str) -> str:
+        from math import gcd
+
+        if str1 + str2 != str2 + str1:
+            return ""
+
+        length = gcd(len(str1), len(str2))
+        return str1[:length]
