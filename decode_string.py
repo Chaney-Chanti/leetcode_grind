@@ -1,3 +1,5 @@
+# Too difficult to even start programming, had an idea, but just prompted for this one. Wanted to understand solution
+# first. I think if I see a similar problem I can try again.
 class Solution:
     def decodeString(self, s: str) -> str:
         stack = []
