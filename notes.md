@@ -6,6 +6,37 @@
 # Tips to remember
 
 ## Topics:
+* Trees
+    - BFS:
+    ```
+    from collections import deque
+    
+    def bfs_tree(root):
+        if not root:
+            return
+    
+        queue = deque([root])
+    
+        while queue:
+            node = queue.popleft()
+            print(node.val)
+    
+            if node.left:
+                queue.append(node.left)
+            if node.right:
+                queue.append(node.right)
+    ```
+    - DFS:
+    ```
+    def dfs_tree(root):
+    if not root:
+        return
+
+    print(root.val)      # Preorder
+    dfs_tree(root.left)
+    dfs_tree(root.right)
+    ```
+    - Finding shortest path, used BFS. If need to visit all nodes, then use DFS.
 * Linked Lists
     - Finding the middle of list, use tortoise and hare
     - Reverse a list, memorize:
