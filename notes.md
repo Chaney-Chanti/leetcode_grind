@@ -61,3 +61,11 @@ a = ["Python", "Java", "C++"]
 for i, v in enumerate(a):
     print(i, v)
 ```
+* When passing parameters in Python, it uses pass-by-object-reference. (https://medium.com/@compuxela/what-is-pass-by-object-reference-in-python-75e7c51599f1)
+*      No copy is made.
+*      The object lives in one place in memory.
+*      Both variables point to it
+*  Python is not:
+*      pass-by-value ❌
+*      pass-by-reference (like C++ references) ❌
+*  Python if almost like pass by reference with the exception that Python always passes a reference to an object — but assignment (=) rebinds the local name to a new object.
