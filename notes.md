@@ -4,6 +4,7 @@
 
 
 # Tips to remember
+* If I find a brute force solution, there's always one underlying trick to think about to reduce the time complexity. 
 
 ## Topics:
 * Trees
