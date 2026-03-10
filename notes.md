@@ -1,5 +1,5 @@
 # How it started out
-1. As I go through leetcode 75, I realize that every question is under a topic, which tells me what data structure to use. However, I should know how to solve the question intuitivley without knowing the structure which at the moment, I still coukldn't confidently know which structure to use. I guess it's fine for now.
+1. As I go through leetcode 75, I realize that every question is under a topic, which tells me what data structure to use. However, I should know how to solve the question intuitivley without knowing the structure which at the moment, I still couldn't confidently know which structure to use. I guess it's fine for now.
 2. I find that even if I know the solution conceptually, sometimes I have trouble programming it out. An example of trouble would be programming the end conditions of loops. Even if I am able to program it out, ChatGBT provides a cleaner way.
 
 
@@ -7,6 +7,22 @@
 * If I find a brute force solution, there's always one underlying trick to think about to reduce the time complexity. 
 
 ## Topics:
+* Two Pointers
+    - Pairs
+    - Sorted arrays
+    - Linked lists cycles
+* Dynamic Window
+    - Contiguous subarrays
+    - Substrings
+* Fast and Slow Pointers
+    - Detect cycles in linked lists
+    - Finding the middle element
+* Binary Search Variations
+    - Rotated arrays
+    - Finding boundaries
+    - Searching in infinite sequences
+* Dynamic Programming (breaking down overlapping problems into sub problems, and storing solutions to avoid redudant work)
+* Backtracking (Exploring all possible solutions and building candidates incrementally and abadoning paths that don't work)
 * Trees
     - BFS:
     ```
@@ -38,6 +54,8 @@
     dfs_tree(root.right)
     ```
     - Finding shortest path, used BFS. If need to visit all nodes, then use DFS.
+    - Time: O(n)
+    - Data Structures: if done recursivley, then we only need hash set, if not done recursivley, use stack.
 * Linked Lists
     - Finding the middle of list, use tortoise and hare
     - Reverse a list, memorize:
