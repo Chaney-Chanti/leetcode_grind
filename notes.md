@@ -16,7 +16,7 @@
     - Substrings
 * Fast and Slow Pointers
     - Detect cycles in linked lists
-    - Finding the middle element
+    - Finding the middle element (Helpful for reversing the second half of a linked list)
 * Binary Search Variations
     - Rotated arrays
     - Finding boundaries
