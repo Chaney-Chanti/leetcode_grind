@@ -45,3 +45,31 @@ class Solution:
         fast.next = head
         # Slow becomes the new end
         slow.next = None
+
+
+# Canonical Way
+class Solution:
+    def rotateRight(self, head: Optional[ListNode], k: int) -> Optional[ListNode]:
+        if not head or not head.next or k == 0: return head
+
+        # Get length and tail in one pass
+        length = 1
+        tail = head
+        while tail.next:
+            tail = tail.next
+            length += 1
+
+        k = k % length
+        if k == 0: return head
+
+        # Find the new tail (length - k - 1 steps from head)
+        new_tail = head
+        for _ in range(length - k - 1):
+            new_tail = new_tail.next
+
+        # Reroute
+        new_head = new_tail.next
+        new_tail.next = None
+        tail.next = head
+
+        return new_head
