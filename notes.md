@@ -88,3 +88,8 @@ for i, v in enumerate(a):
 *      pass-by-value ❌
 *      pass-by-reference (like C++ references) ❌
 *  Python if almost like pass by reference with the exception that Python always passes a reference to an object — but assignment (=) rebinds the local name to a new object.
+*  To swap values in python, you don't need a temp var. Python makes it very convenient actually like:
+```
+nums[i], nums[j] = nums[j], nums[i]
+```
+*  
