@@ -70,8 +70,8 @@ class Solution:
             val2 = l2.val if l2 else 0
 
             total = val1 + val2 + carry
-            carry = total // 10
-            digit = total % 10
+            carry = total // 10 # calculate the carry
+            digit = total % 10 # calculate the leftover number, reduce if over 10
 
             curr.next = ListNode(digit)
             curr = curr.next
