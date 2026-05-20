@@ -59,6 +59,10 @@
 #         return output
 
 
+# Clarifying questions to ask:
+# How long can the linked list be?
+# Do I have negative numbers? Or is it just positive numbers?
+# There aren't any loops right?
 class Solution:
     def addTwoNumbers(self, l1: Optional[ListNode], l2: Optional[ListNode]) -> Optional[ListNode]:
         dummy = ListNode(0)
